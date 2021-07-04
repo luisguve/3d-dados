@@ -1,0 +1,214 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#contenedor-juego {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  background: #fff8e2;
+  width: 90%;
+}
+@media screen and (min-width: 768px) {
+  #contenedor-juego {
+    padding: 100px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #contenedor-juego {
+    width: 50%;
+  }
+}
+#contenedor-juego #contenedor-dados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#contenedor-juego #contenedor-dados div.row {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  #contenedor-juego #contenedor-dados div.row {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #contenedor-juego #contenedor-dados div.row {
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+}
+#contenedor-juego .contenedor-dado {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  perspective: 1000px;
+}
+#contenedor-juego .contenedor-dado .dado {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 6s;
+}
+#contenedor-juego .contenedor-dado .dado .lado {
+  background: rgba(236, 19, 19, 0.8);
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  border: 2px solid #ab1a1a;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 500%;
+  text-align: center;
+  padding: 25px 0;
+}
+#contenedor-juego .contenedor-dado .dado .lado.frente {
+  transform: translateZ(50px);
+}
+#contenedor-juego .contenedor-dado .dado .lado.atras {
+  transform: rotateX(-180deg) translateZ(50px);
+}
+#contenedor-juego .contenedor-dado .dado .lado.derecha {
+  transform: rotateY(90deg) translateZ(50px);
+}
+#contenedor-juego .contenedor-dado .dado .lado.izquierda {
+  transform: rotateY(-90deg) translateZ(50px);
+}
+#contenedor-juego .contenedor-dado .dado .lado.arriba {
+  transform: rotateX(90deg) translateZ(50px);
+}
+#contenedor-juego .contenedor-dado .dado .lado.abajo {
+  transform: rotateX(-90deg) translateZ(50px);
+}
+#contenedor-juego .contenedor-dado .dado .lado.uno .punto1 {
+  top: 42.5%;
+  left: 42.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado.dos .punto1 {
+  top: 22.5%;
+  left: 22.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado.dos .punto2 {
+  top: 62.5%;
+  left: 62.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado.tres .punto1 {
+  top: 22.5%;
+  left: 22.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado.tres .punto2 {
+  top: 42.5%;
+  left: 42.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado.tres .punto3 {
+  top: 62.5%;
+  left: 62.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado.cuatro .punto1 {
+  top: 22.5%;
+  left: 22.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado.cuatro .punto2 {
+  top: 22.5%;
+  left: 62.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado.cuatro .punto3 {
+  top: 62.5%;
+  left: 22.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado.cuatro .punto4 {
+  top: 62.5%;
+  left: 62.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado.cinco .punto1 {
+  top: 22.5%;
+  left: 22.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado.cinco .punto2 {
+  top: 22.5%;
+  left: 62.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado.cinco .punto3 {
+  top: 42.5%;
+  left: 42.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado.cinco .punto4 {
+  top: 62.5%;
+  left: 22.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado.cinco .punto5 {
+  top: 62.5%;
+  left: 62.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado.seis .punto1 {
+  top: 22.5%;
+  left: 22.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado.seis .punto2 {
+  top: 22.5%;
+  left: 42.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado.seis .punto3 {
+  top: 22.5%;
+  left: 62.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado.seis .punto4 {
+  top: 62.5%;
+  left: 22.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado.seis .punto5 {
+  top: 62.5%;
+  left: 42.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado.seis .punto6 {
+  top: 62.5%;
+  left: 62.5%;
+}
+#contenedor-juego .contenedor-dado .dado .lado .punto {
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+}
+#contenedor-juego button {
+  border: none;
+  background: green;
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  margin-top: 50px;
+}
+#contenedor-juego button:hover {
+  cursor: pointer;
+  background: #299c29;
+}
+#contenedor-juego button.deshabilitado {
+  background: #384635;
+}
+#contenedor-juego button.deshabilitado:hover {
+  cursor: initial;
+}
+#contenedor-juego .consola.hide {
+  visibility: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
