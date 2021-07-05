@@ -88,41 +88,40 @@ body {
           padding: 25px 0;
         }
 
-        &.frente {
-          transform: translateZ(30px);
+        @mixin rotar-lado-X($rotacion) {
+          $zoom: 50px;
+          $zoomMovil: 30px;
+          transform: rotateX($rotacion) translateZ($zoomMovil);
           @media screen and (min-width: 768px) {
-            transform: translateZ(50px);
+            transform: rotateX($rotacion) translateZ($zoom);
           }
+        }
+        @mixin rotar-lado-Y($rotacion) {
+          $zoom: 50px;
+          $zoomMovil: 30px;
+          transform: rotateY($rotacion) translateZ($zoomMovil);
+          @media screen and (min-width: 768px) {
+            transform: rotateY($rotacion) translateZ($zoom);
+          }
+        }
+
+        &.frente {
+          @include rotar-lado-X(0deg);
         }
         &.atras {
-          transform: rotateX(-180deg) translateZ(30px);
-          @media screen and (min-width: 768px) {
-            transform: rotateX(-180deg) translateZ(50px);
-          }
+          @include rotar-lado-X(-180deg);
         }
         &.derecha {
-          transform: rotateY(90deg) translateZ(30px);
-          @media screen and (min-width: 768px) {
-            transform: rotateY(90deg) translateZ(50px);
-          }
+          @include rotar-lado-Y(90deg);
         }
         &.izquierda {
-          transform: rotateY(-90deg) translateZ(30px);
-          @media screen and (min-width: 768px) {
-            transform: rotateY(-90deg) translateZ(50px);
-          }
+          @include rotar-lado-Y(-90deg);
         }
         &.arriba {
-          transform: rotateX(90deg) translateZ(30px);
-          @media screen and (min-width: 768px) {
-            transform: rotateX(90deg) translateZ(50px);
-          }
+          @include rotar-lado-X(90deg);
         }
         &.abajo {
-          transform: rotateX(-90deg) translateZ(30px);
-          @media screen and (min-width: 768px) {
-            transform: rotateX(-90deg) translateZ(50px);
-          }
+          @include rotar-lado-X(-90deg);
         }
 
         $_centro: 42.5%;

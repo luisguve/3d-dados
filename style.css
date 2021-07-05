@@ -93,11 +93,11 @@ body {
   }
 }
 #contenedor-juego .contenedor-dado .dado .lado.frente {
-  transform: translateZ(30px);
+  transform: rotateX(0deg) translateZ(30px);
 }
 @media screen and (min-width: 768px) {
   #contenedor-juego .contenedor-dado .dado .lado.frente {
-    transform: translateZ(50px);
+    transform: rotateX(0deg) translateZ(50px);
   }
 }
 #contenedor-juego .contenedor-dado .dado .lado.atras {
