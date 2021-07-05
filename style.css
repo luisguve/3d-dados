@@ -73,12 +73,12 @@ body {
   transition: transform 6s;
 }
 #contenedor-juego .contenedor-dado .dado .lado {
-  background: rgba(236, 19, 19, 0.8);
+  background: rgba(72, 208, 47, 0.81);
   display: block;
   position: absolute;
   width: 60px;
   height: 30px;
-  border: 2px solid #ab1a1a;
+  border: 2px solid #1c9007;
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 500%;
