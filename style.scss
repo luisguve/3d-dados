@@ -125,38 +125,49 @@ body {
           }
         }
 
+        $_centro: 42.5%;
+        $_lado: 22.5%;
+
+        @mixin centro() { top: $_centro; left: $_centro; }
+        @mixin centro-izquierda() { top: $_centro; left: $_lado; }
+        @mixin centro-derecha() { top: $_centro; right: $_lado; }
+        @mixin arriba-izquierda() { top: $_lado; left: $_lado; }
+        @mixin arriba-derecha() { top: $_lado; right: $_lado; }
+        @mixin abajo-izquierda() { bottom: $_lado; left: $_lado; }
+        @mixin abajo-derecha() { bottom: $_lado; right: $_lado; }
+
         &.uno {
-          .punto1 { top: 42.5%; left: 42.5%; }
+          .punto1 { @include centro; }
         }
         &.dos {
-          .punto1 { top: 22.5%; left: 22.5%; }
-          .punto2 { top: 62.5%; left: 62.5%; }
+          .punto1 { @include arriba-izquierda; }
+          .punto2 { @include abajo-derecha; }
         }
         &.tres {
-          .punto1 { top: 22.5%; left: 22.5%; }
-          .punto2 { top: 42.5%; left: 42.5%; }
-          .punto3 { top: 62.5%; left: 62.5%; }
+          .punto1 { @include abajo-izquierda; }
+          .punto2 { @include centro; }
+          .punto3 { @include arriba-derecha; }
         }
         &.cuatro {
-          .punto1 { top: 22.5%; left: 22.5%; }
-          .punto2 { top: 22.5%; left: 62.5%; }
-          .punto3 { top: 62.5%; left: 22.5%; }
-          .punto4 { top: 62.5%; left: 62.5%; }
+          .punto1 { @include arriba-izquierda; }
+          .punto2 { @include arriba-derecha; }
+          .punto3 { @include abajo-izquierda; }
+          .punto4 { @include abajo-derecha; }
         }
         &.cinco {
-          .punto1 { top: 22.5%; left: 22.5%; }
-          .punto2 { top: 22.5%; left: 62.5%; }
-          .punto3 { top: 42.5%; left: 42.5%; }
-          .punto4 { top: 62.5%; left: 22.5%; }
-          .punto5 { top: 62.5%; left: 62.5%; }
+          .punto1 { @include arriba-izquierda; }
+          .punto2 { @include arriba-derecha; }
+          .punto3 { @include centro; }
+          .punto4 { @include abajo-izquierda; }
+          .punto5 { @include abajo-derecha; }
         }
         &.seis {
-          .punto1 { top: 22.5%; left: 22.5%; }
-          .punto2 { top: 22.5%; left: 42.5%; }
-          .punto3 { top: 22.5%; left: 62.5%; }
-          .punto4 { top: 62.5%; left: 22.5%; }
-          .punto5 { top: 62.5%; left: 42.5%; }
-          .punto6 { top: 62.5%; left: 62.5%; }
+          .punto1 { @include arriba-izquierda; }
+          .punto2 { @include arriba-derecha; }
+          .punto3 { @include centro-izquierda; }
+          .punto4 { @include centro-derecha; }
+          .punto5 { @include abajo-izquierda; }
+          .punto6 { @include abajo-derecha; }
         }
         .punto {
           display: block;

@@ -149,11 +149,11 @@ body {
   left: 22.5%;
 }
 #contenedor-juego .contenedor-dado .dado .lado.dos .punto2 {
-  top: 62.5%;
-  left: 62.5%;
+  bottom: 22.5%;
+  right: 22.5%;
 }
 #contenedor-juego .contenedor-dado .dado .lado.tres .punto1 {
-  top: 22.5%;
+  bottom: 22.5%;
   left: 22.5%;
 }
 #contenedor-juego .contenedor-dado .dado .lado.tres .punto2 {
@@ -161,8 +161,8 @@ body {
   left: 42.5%;
 }
 #contenedor-juego .contenedor-dado .dado .lado.tres .punto3 {
-  top: 62.5%;
-  left: 62.5%;
+  top: 22.5%;
+  right: 22.5%;
 }
 #contenedor-juego .contenedor-dado .dado .lado.cuatro .punto1 {
   top: 22.5%;
@@ -170,15 +170,15 @@ body {
 }
 #contenedor-juego .contenedor-dado .dado .lado.cuatro .punto2 {
   top: 22.5%;
-  left: 62.5%;
+  right: 22.5%;
 }
 #contenedor-juego .contenedor-dado .dado .lado.cuatro .punto3 {
-  top: 62.5%;
+  bottom: 22.5%;
   left: 22.5%;
 }
 #contenedor-juego .contenedor-dado .dado .lado.cuatro .punto4 {
-  top: 62.5%;
-  left: 62.5%;
+  bottom: 22.5%;
+  right: 22.5%;
 }
 #contenedor-juego .contenedor-dado .dado .lado.cinco .punto1 {
   top: 22.5%;
@@ -186,19 +186,19 @@ body {
 }
 #contenedor-juego .contenedor-dado .dado .lado.cinco .punto2 {
   top: 22.5%;
-  left: 62.5%;
+  right: 22.5%;
 }
 #contenedor-juego .contenedor-dado .dado .lado.cinco .punto3 {
   top: 42.5%;
   left: 42.5%;
 }
 #contenedor-juego .contenedor-dado .dado .lado.cinco .punto4 {
-  top: 62.5%;
+  bottom: 22.5%;
   left: 22.5%;
 }
 #contenedor-juego .contenedor-dado .dado .lado.cinco .punto5 {
-  top: 62.5%;
-  left: 62.5%;
+  bottom: 22.5%;
+  right: 22.5%;
 }
 #contenedor-juego .contenedor-dado .dado .lado.seis .punto1 {
   top: 22.5%;
@@ -206,23 +206,23 @@ body {
 }
 #contenedor-juego .contenedor-dado .dado .lado.seis .punto2 {
   top: 22.5%;
-  left: 42.5%;
+  right: 22.5%;
 }
 #contenedor-juego .contenedor-dado .dado .lado.seis .punto3 {
-  top: 22.5%;
-  left: 62.5%;
-}
-#contenedor-juego .contenedor-dado .dado .lado.seis .punto4 {
-  top: 62.5%;
+  top: 42.5%;
   left: 22.5%;
 }
+#contenedor-juego .contenedor-dado .dado .lado.seis .punto4 {
+  top: 42.5%;
+  right: 22.5%;
+}
 #contenedor-juego .contenedor-dado .dado .lado.seis .punto5 {
-  top: 62.5%;
-  left: 42.5%;
+  bottom: 22.5%;
+  left: 22.5%;
 }
 #contenedor-juego .contenedor-dado .dado .lado.seis .punto6 {
-  top: 62.5%;
-  left: 62.5%;
+  bottom: 22.5%;
+  right: 22.5%;
 }
 #contenedor-juego .contenedor-dado .dado .lado .punto {
   display: block;
